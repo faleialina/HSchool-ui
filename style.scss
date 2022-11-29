@@ -1,26 +1,36 @@
 $color-font-dark-blue: #224380;
 $color-font-whait: #FFFFFF;
 
+$display: display flex,
+    justify-content space-between;
+
+
+
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Mulish';
-    font-style: normal;
+}
+
+body {
+
+    background: #fbf9f9;
+    width: 1200px;
+
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
+    display: $display;
+    align-items: center;
 }
 
 h1 {
     font: 900 30px 'Mulish';
     color: $color-font-dark-blue;
 }
+
 nav {
-    display: flex;
-    justify-content: space-between;
+    display: $display;
 }
 
 p {
@@ -30,7 +40,7 @@ p {
 
 p:hover {
     text-decoration: underline;
-     color: $color-font-whait;
+    color: $color-font-whait;
 }
 
 p:not(:last-child) {
@@ -43,14 +53,48 @@ p:not(:last-child) {
     text-align: center;
     padding: 15px 0;
     background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
-   
-    font: 'Mulish';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-font: $color-font-dark-blue
+    font: 700 16px 'Mulish';
+    font: $color-font-dark-blue;
 }
 
+.one {
+    display: $display;
+}
 
+.video {
+    width: 590px;
+    height: 360px;
+    position: relative;
+    left: 600px;
+    bottom: 120px;
 
+}
+
+.Rectangle {
+    background-image: url(./img/Rectangle.svg);
+    width: 590px;
+    height: 360px;
+    background-repeat: no-repeat;
+}
+
+.Oval {
+    background-image: url(./img/Oval.svg);
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 160px;
+    left: 270px;
+}
+
+.Triangle {
+    background-image: url(./img/Triangle.svg);
+
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 23px;
+    position: absolute;
+    top: 180px;
+    left: 300px;
+}
