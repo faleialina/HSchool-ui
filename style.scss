@@ -115,15 +115,13 @@ p:not(:last-child) {
     bottom: 146px;
     right: 110px;
     border-right: 1px solid #E7EAEB;
-    border-right: not(last-child);
+    border-right: ;
 
 }
 
-.text div {
-    text-align: center;
-
-    height: 172px;
-
+.text div:not(:last-child) {
+    border-right: 1px solid  #5c5e5f;
+   
 }
 
 .three {
