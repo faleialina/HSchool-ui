@@ -27,7 +27,7 @@ header {
 }
 
 h1 {
-    font: 900 30px 'Mulish';
+    font: 700 60px 'Montserrat';
     color: $color-font-dark-blue;
 }
 
@@ -36,7 +36,7 @@ nav {
 }
 
 p {
-    font: 700 16px 'Mulish';
+    font: 400 20px 'Mulish';
     color: $color-font-dark-blue
 }
 
@@ -55,7 +55,7 @@ p:not(:last-child) {
     text-align: center;
     padding: 15px 0;
     background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
-    font: 700 16px 'Mulish';
+    font: 700 20px 'Mulish';
     font: $color-font-dark-blue;
 }
 
@@ -70,13 +70,11 @@ p:not(:last-child) {
 }
 
 .video {
-    width: 590px;
-    height: 360px;
+    width: 1250px;
+    height: 380px;
     background-image: url(./img/Group\ 7.svg);
     background-repeat: no-repeat;
 }
-
-
 
 .Triangle {
     background-image: url(./img/Triangle.svg);
@@ -114,14 +112,15 @@ p:not(:last-child) {
     position: relative;
     bottom: 146px;
     right: 110px;
-    border-right: 1px solid #E7EAEB;
-    border-right: ;
+}
 
+.text div {
+    height: 172px;
+    padding: auto;
 }
 
 .text div:not(:last-child) {
-    border-right: 1px solid  #5c5e5f;
-   
+    border-right: 1px solid #5c5e5f;
 }
 
 .three {
