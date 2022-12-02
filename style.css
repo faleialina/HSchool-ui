@@ -1,10 +1,20 @@
-.three .wrapper .inf, .two .text, .two, .one, header nav, header {
+.three .wrapper .inf .benefits, .three .wrapper .inf, .two .text, .two, .one, header nav, header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.one .btn, header .btn {
+  width: 147px;
+  border-radius: 33px;
+  text-align: center;
+  padding: 15px 0;
+  background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
+  font: 700 20px "Mulish";
+  font: #224380;
 }
 
 * {
@@ -25,7 +35,7 @@ header {
           align-items: center;
 }
 header h1 {
-  font: 700 60px "Montserrat";
+  font: 900 30px "Montserrat";
   color: #224380;
 }
 header p {
@@ -39,20 +49,15 @@ header p:hover {
 header p:not(:last-child) {
   margin-right: 35px;
 }
-header .btn-start {
-  width: 147px;
-  border-radius: 33px;
-  text-align: center;
-  padding: 15px 0;
-  background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
-  font: 700 20px "Mulish";
-  font: #224380;
-}
-
 .one {
   margin-top: 100px;
 }
+.one h1 {
+  font: 700 60px "Montserrat";
+  color: #224380;
+}
 .one p {
+  font: 400 20px "Mulish";
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -65,7 +70,6 @@ header .btn-start {
   position: relative;
   left: 120px;
 }
-
 .two {
   margin-top: 270px;
   position: relative;
@@ -81,6 +85,7 @@ header .btn-start {
 }
 .two .text {
   width: 1120px;
+  height: 172px;
   background: #FFFFFF;
   border: 1px solid #E7EAEB;
   border-radius: 21px;
@@ -89,8 +94,14 @@ header .btn-start {
   z-index: 1;
 }
 .two .text div {
-  height: 172px;
-  padding: auto;
+  position: relative;
+  top: 50px;
+  height: 90px;
+  width: 390px;
+  text-align: center;
+}
+.two .text div h2 {
+  font: 700 40px "Montserrat";
 }
 .two .text div:not(:last-child) {
   border-right: 1px solid #5c5e5f;
@@ -108,11 +119,12 @@ header .btn-start {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 30px;
 }
 .three .wrapper .inf {
   width: 1120px;
   text-align: left;
-  background-color: #224380;
+  background: linear-gradient(44.11deg, #fdfeff 15.75%, #e7ebf2 84.63%);
   border-radius: 21px;
   margin-top: 30px;
   margin: auto;

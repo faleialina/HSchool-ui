@@ -6,6 +6,16 @@ $color-font-whait: #FFFFFF;
     justify-content: space-between;
 }
 
+%btn-start {
+    width: 147px;
+    border-radius: 33px;
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
+    font: 700 20px 'Mulish';
+    font: $color-font-dark-blue;
+}
+
 
 
 * {
@@ -25,7 +35,7 @@ header {
     align-items: center;
 
     h1 {
-        font: 700 60px 'Montserrat';
+        font: 900 30px 'Montserrat';
         color: $color-font-dark-blue;
     }
 
@@ -47,14 +57,8 @@ header {
         margin-right: 35px;
     }
 
-    .btn-start {
-        width: 147px;
-        border-radius: 33px;
-        text-align: center;
-        padding: 15px 0;
-        background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
-        font: 700 20px 'Mulish';
-        font: $color-font-dark-blue;
+    .btn {
+        @extend %btn-start;
     }
 }
 
@@ -62,7 +66,14 @@ header {
     @extend %display;
     margin-top: 100px;
 
+    h1 {
+        font: 700 60px 'Montserrat';
+        color: $color-font-dark-blue;
+    }
+
+
     p {
+        font: 400 20px 'Mulish';
         margin-top: 20px;
         margin-bottom: 50px;
     }
@@ -76,6 +87,11 @@ header {
         position: relative;
         left: 120px;
     }
+
+    .btn {
+        @extend %btn-start;
+    }
+
 }
 
 
@@ -98,6 +114,7 @@ header {
     .text {
         @extend %display;
         width: 1120px;
+        height: 172px;
         background: #FFFFFF;
         border: 1px solid #E7EAEB;
         border-radius: 21px;
@@ -106,8 +123,15 @@ header {
         z-index: 1;
 
         div {
-            height: 172px;
-            padding: auto;
+            position: relative;
+            top: 50px;
+            height: 90px;
+            width: 390px;
+            text-align: center;
+
+            h2 {
+                font: 700 40px 'Montserrat';
+            }
         }
 
         div:not(:last-child) {
@@ -126,25 +150,26 @@ header {
     .wrapper {
         display: flex;
         flex-direction: column;
+        margin-top: 30px;
 
         .inf {
             @extend %display;
             width: 1120px;
             text-align: left;
-            background-color: #224380;
-            // background: linear-gradient(44.11deg, #fdfeff 15.75%, #e7ebf2 84.63%);
+            background: linear-gradient(44.11deg, #fdfeff 15.75%, #e7ebf2 84.63%);
             border-radius: 21px;
             margin-top: 30px;
             margin: auto;
 
+            .benefits {
+                @extend %display;
+            }
         }
 
         .inf:not(:last-child) {
             margin-bottom: 30px;
         }
-
     }
-
 
     .img {
         background-image: url(./img/Group\ 8.svg);
