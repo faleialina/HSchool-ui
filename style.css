@@ -71,7 +71,7 @@ header p:not(:last-child) {
   left: 120px;
 }
 .two {
-  margin-top: 270px;
+  margin-top: 20px;
   position: relative;
 }
 .two .Oval {
@@ -111,6 +111,14 @@ header p:not(:last-child) {
   margin-top: 120px;
   text-align: center;
 }
+.three h1 {
+  font: 700 46px "Montserrat";
+  color: #224380;
+}
+.three p {
+  font: 400 20px "Mulish";
+  color: #224380;
+}
 .three .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,7 +127,7 @@ header p:not(:last-child) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 30px;
+  margin-top: 61px;
 }
 .three .wrapper .inf {
   width: 1120px;
@@ -129,16 +137,22 @@ header p:not(:last-child) {
   margin-top: 30px;
   margin: auto;
 }
-.three .wrapper .inf:not(:last-child) {
-  margin-bottom: 30px;
-}
-.three .img {
+.three .wrapper .inf .benefits .img {
   background-image: url(./img/Group\ 8.svg);
   width: 144px;
   height: 64px;
   background-repeat: no-repeat;
   margin-left: 10px;
 }
-.three h3 {
+.three .wrapper .inf .benefits h3 {
+  font: 700 24px "Montserrat";
+  color: #224380;
+  margin-bottom: 30px;
+}
+.three .wrapper .inf .benefits p {
+  font: 400 16px "Mulish";
+  color: #224380;
+}
+.three .wrapper .inf:not(:last-child) {
   margin-bottom: 30px;
 }
