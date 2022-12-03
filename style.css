@@ -137,22 +137,28 @@ header p:not(:last-child) {
   margin-top: 30px;
   margin: auto;
 }
+.three .wrapper .inf .benefits {
+  width: 950px;
+}
 .three .wrapper .inf .benefits .img {
   background-image: url(./img/Group\ 8.svg);
-  width: 144px;
+  width: 104px;
   height: 64px;
   background-repeat: no-repeat;
   margin-left: 10px;
 }
-.three .wrapper .inf .benefits h3 {
+.three .wrapper .inf div {
+  margin-left: 30px;
+}
+.three .wrapper .inf h3 {
   font: 700 24px "Montserrat";
   color: #224380;
   margin-bottom: 30px;
 }
-.three .wrapper .inf .benefits p {
+.three .wrapper .inf p {
   font: 400 16px "Mulish";
   color: #224380;
 }
-.three .wrapper .inf:not(:last-child) {
+.three .inf:not(:last-child) {
   margin-bottom: 30px;
 }
